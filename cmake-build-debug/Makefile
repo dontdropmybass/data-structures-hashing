@@ -123,6 +123,60 @@ data_structures_hashing/fast:
 	$(MAKE) -f CMakeFiles/data_structures_hashing.dir/build.make CMakeFiles/data_structures_hashing.dir/build
 .PHONY : data_structures_hashing/fast
 
+dictionary.o: dictionary.cpp.o
+
+.PHONY : dictionary.o
+
+# target to build an object file
+dictionary.cpp.o:
+	$(MAKE) -f CMakeFiles/data_structures_hashing.dir/build.make CMakeFiles/data_structures_hashing.dir/dictionary.cpp.o
+.PHONY : dictionary.cpp.o
+
+dictionary.i: dictionary.cpp.i
+
+.PHONY : dictionary.i
+
+# target to preprocess a source file
+dictionary.cpp.i:
+	$(MAKE) -f CMakeFiles/data_structures_hashing.dir/build.make CMakeFiles/data_structures_hashing.dir/dictionary.cpp.i
+.PHONY : dictionary.cpp.i
+
+dictionary.s: dictionary.cpp.s
+
+.PHONY : dictionary.s
+
+# target to generate assembly for a file
+dictionary.cpp.s:
+	$(MAKE) -f CMakeFiles/data_structures_hashing.dir/build.make CMakeFiles/data_structures_hashing.dir/dictionary.cpp.s
+.PHONY : dictionary.cpp.s
+
+hasher.o: hasher.cpp.o
+
+.PHONY : hasher.o
+
+# target to build an object file
+hasher.cpp.o:
+	$(MAKE) -f CMakeFiles/data_structures_hashing.dir/build.make CMakeFiles/data_structures_hashing.dir/hasher.cpp.o
+.PHONY : hasher.cpp.o
+
+hasher.i: hasher.cpp.i
+
+.PHONY : hasher.i
+
+# target to preprocess a source file
+hasher.cpp.i:
+	$(MAKE) -f CMakeFiles/data_structures_hashing.dir/build.make CMakeFiles/data_structures_hashing.dir/hasher.cpp.i
+.PHONY : hasher.cpp.i
+
+hasher.s: hasher.cpp.s
+
+.PHONY : hasher.s
+
+# target to generate assembly for a file
+hasher.cpp.s:
+	$(MAKE) -f CMakeFiles/data_structures_hashing.dir/build.make CMakeFiles/data_structures_hashing.dir/hasher.cpp.s
+.PHONY : hasher.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... data_structures_hashing"
+	@echo "... dictionary.o"
+	@echo "... dictionary.i"
+	@echo "... dictionary.s"
+	@echo "... hasher.o"
+	@echo "... hasher.i"
+	@echo "... hasher.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

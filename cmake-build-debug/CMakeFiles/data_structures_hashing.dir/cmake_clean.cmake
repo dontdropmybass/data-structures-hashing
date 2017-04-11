@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/data_structures_hashing.dir/main.cpp.o"
+  "CMakeFiles/data_structures_hashing.dir/hasher.cpp.o"
+  "CMakeFiles/data_structures_hashing.dir/dictionary.cpp.o"
   "data_structures_hashing.pdb"
   "data_structures_hashing"
 )

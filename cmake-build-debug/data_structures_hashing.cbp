@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/alex/repos/data-structures-hashing/dictionary.cpp">
+			<Option target="data_structures_hashing"/>
+		</Unit>
+		<Unit filename="/Users/alex/repos/data-structures-hashing/dictionary.h">
+			<Option target="data_structures_hashing"/>
+		</Unit>
+		<Unit filename="/Users/alex/repos/data-structures-hashing/hasher.cpp">
+			<Option target="data_structures_hashing"/>
+		</Unit>
+		<Unit filename="/Users/alex/repos/data-structures-hashing/hasher.h">
+			<Option target="data_structures_hashing"/>
+		</Unit>
 		<Unit filename="/Users/alex/repos/data-structures-hashing/main.cpp">
 			<Option target="data_structures_hashing"/>
 		</Unit>

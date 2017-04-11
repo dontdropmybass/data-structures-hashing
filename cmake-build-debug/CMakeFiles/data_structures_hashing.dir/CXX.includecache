@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alex/repos/data-structures-hashing/dictionary.cpp
+dictionary.h
+/Users/alex/repos/data-structures-hashing/dictionary.h
+
+/Users/alex/repos/data-structures-hashing/dictionary.h
+fstream
+-
+string
+-
+
+/Users/alex/repos/data-structures-hashing/hasher.cpp
+hasher.h
+/Users/alex/repos/data-structures-hashing/hasher.h
+
+/Users/alex/repos/data-structures-hashing/hasher.h
+iostream
+-
+string
+-
+
+/Users/alex/repos/data-structures-hashing/main.cpp
+iostream
+-
+dictionary.h
+/Users/alex/repos/data-structures-hashing/dictionary.h
+hasher.h
+/Users/alex/repos/data-structures-hashing/hasher.h
+
