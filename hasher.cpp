@@ -9,22 +9,7 @@ int hasher::hash(std::string data) {
     for (int i = 0; i < data.length(); i++) {
         sum += ((int) data.c_str()[i]);
     }
-
-    int address = sum % TABLESIZE;
-
-    if (hashTable[address] != NULL) {
-        collisions++;
-        Node* node = hashTable[address];
-        while (node->next != NULL) {
-            node = node->next;
-        }
-        node->next = new Node(data);
-    }
-    else {
-        hashTable[address] = new Node(data);
-    }
-
-    return address;
+    return sum % TABLESIZE;
 }
 
 int hasher::getCollisions() {
@@ -36,21 +21,28 @@ hasher::Node *&hasher::operator[](int index) {
     return hashTable[index];
 }
 
-std::ostream& operator<<(std::ostream &out, hasher &h) {
-    for (int i = 0; i < TABLESIZE; i++) {
-        out << std::string("Bucket #") << i << std::string(":");
-        if (h[i] == NULL) {
-            out << std::string(" NULL");
+bool hasher::search(std::string data) {
+    int address = hash(data);
+    Node* node = hashTable[address];
+    while (node != NULL) {
+        if (node->data == data) {
+            return true;
         }
-        else {
-            hasher::Node* node = h[i];
-            while (node != NULL) {
-                out << std::string(" ") << node->data;
-                node = node->next;
-            }
-        }
-        out << std::endl;
+        node = node->next;
     }
+    return false;
+}
 
-    return out;
+void hasher::addToHashTable(std::string data, int address) {
+    if (hashTable[address] != NULL) {
+        collisions++;
+        Node* node = hashTable[address];
+        while (node->next != NULL) {
+            node = node->next;
+        }
+        node->next = new Node(data);
+    }
+    else {
+        hashTable[address] = new Node(data);
+    }
 }

@@ -34,6 +34,8 @@ public:
     int getCollisions();
     Node*& operator[](int index);
     friend std::ostream& operator<< (std::ostream& out, hasher &h);
+    bool search(std::string data);
+    void addToHashTable(std::string data, int address);
 };
 
 

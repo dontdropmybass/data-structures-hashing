@@ -12,9 +12,12 @@ class dictionary {
 private:
     std::string* array;
     std::string* temp;
+    std::string tempString;
     int length = 0;
 public:
+    dictionary();
     dictionary(std::string filename);
+    void add(std::string data);
     int size();
     std::string& operator[] (int index);
 };

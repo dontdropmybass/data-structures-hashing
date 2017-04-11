@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 /Users/alex/repos/data-structures-hashing/dictionary.cpp
+regex
+-
+sstream
+-
 dictionary.h
 /Users/alex/repos/data-structures-hashing/dictionary.h
 
